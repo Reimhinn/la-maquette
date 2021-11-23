@@ -1,0 +1,9 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+@import "./mixins";
+@import "./maquette";
+@import"./bravo";
+

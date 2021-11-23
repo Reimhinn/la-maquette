@@ -1,0 +1,59 @@
+.maquette {
+
+  &__title {
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    left: 850px;
+  }
+
+  &__price {
+      position: absolute;
+      top: 486px;
+      left: 879px;
+      animation: multicolor 2.5s infinite alternate;
+      font-size: 45px;
+    }
+
+  &__button-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    }
+
+  &__buy {
+    @include btn;
+
+
+    &:hover:before {content:"ne pas "}
+  }
+
+  &__dont-buy {
+    @include btn;
+  }
+
+  &__text{
+    padding: 55px;
+    white-space: nowrap;
+    text-decoration: none;
+    color: black;
+  }
+}
+
+
+@keyframes multicolor {
+  0% {
+    color: blue;
+  }
+
+  33% {
+    color: red;
+  }
+
+  66% {
+    color: green;
+  }
+
+  100% {
+    color: pink;
+  }
+}

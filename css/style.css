@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.maquette__price {
+  position: absolute;
+  top: 486px;
+  left: 879px;
+  animation: multicolor 2.5s infinite alternate;
+  font-size: 45px;
+}
+.maquette__button-wrap {
+  position: absolute;
+  right: 900px;
+  top: 580px;
+}
+.maquette__buy {
+  background-color: blue;
+}
+.maquette__buy:focus + .maquette__dont-buy {
+  position: relative;
+  right: 70px;
+}
+
+@keyframes multicolor {
+  0% {
+    color: blue;
+  }
+  33% {
+    color: red;
+  }
+  66% {
+    color: green;
+  }
+  100% {
+    color: pink;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
